@@ -1,11 +1,5 @@
 import moment from "moment";
 
-export const config = {
-  maxDuration: 300,
-  api: {
-    responseLimit: false,
-  },
-};
 export const maxDuration = 300;
 export const runtime = "nodejs";
 
