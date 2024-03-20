@@ -1,5 +1,14 @@
 import moment from "moment";
 
+export const config = {
+  maxDuration: 300,
+  api: {
+    responseLimit: false,
+  },
+};
+export const maxDuration = 300;
+export const runtime = "nodejs";
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const start_date = moment(searchParams.get("start_date"));
